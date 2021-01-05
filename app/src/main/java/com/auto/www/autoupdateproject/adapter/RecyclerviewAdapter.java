@@ -226,6 +226,7 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
                     })
                     .checkUpdate(info);
         } else if (listModel.getSourceTypeVaule() == TypeConfig.DATA_SOURCE_TYPE_URL) {
+            Log.e("tag", "update:DATA_SOURCE_TYPE_URL ");
             //请求
             AppUpdateUtils.getInstance().getUpdateConfig().setUiThemeType(listModel.getUiTypeValue());
             //因为接口未使用文件加密校验 所以在这里关闭

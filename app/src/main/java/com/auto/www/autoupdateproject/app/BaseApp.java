@@ -43,7 +43,7 @@ public class BaseApp extends Application {
                 .setMethodType(TypeConfig.METHOD_GET)//当dataSourceType为DATA_SOURCE_TYPE_URL时，设置请求的方法
                 .setDataSourceType(TypeConfig.DATA_SOURCE_TYPE_URL)//设置获取更新信息的方式
                 .setShowNotification(true)//配置更新的过程中是否在通知栏显示进度
-                .setNotificationIconRes(R.mipmap.download_icon)//配置通知栏显示的图标
+                .setNotificationIconRes(R.mipmap.ic_launcher)//配置通知栏显示的图标
                 .setUiThemeType(TypeConfig.UI_THEME_AUTO)//配置UI的样式，一种有12种样式可供选择
                 .setRequestHeaders(null)//当dataSourceType为DATA_SOURCE_TYPE_URL时，设置请求的请求头
                 .setRequestParams(null)//当dataSourceType为DATA_SOURCE_TYPE_URL时，设置请求的请求参数
