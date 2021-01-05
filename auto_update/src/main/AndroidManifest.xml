@@ -22,6 +22,10 @@
         <activity
             android:name="com.auto.update.activity.UpdateType12Activity"
             android:theme="@style/DialogActivityTheme" />
+
+        <activity
+            android:name="com.auto.update.activity.UpdateType13Activity"
+            android:theme="@style/DialogActivityTheme" />
         <activity
             android:name="com.auto.update.activity.UpdateType11Activity"
             android:theme="@style/DialogActivityTheme" />

@@ -10,6 +10,7 @@ import com.auto.update.activity.UpdateBackgroundActivity;
 import com.auto.update.activity.UpdateType10Activity;
 import com.auto.update.activity.UpdateType11Activity;
 import com.auto.update.activity.UpdateType12Activity;
+import com.auto.update.activity.UpdateType13Activity;
 import com.auto.update.activity.UpdateType1Activity;
 import com.auto.update.activity.UpdateType2Activity;
 import com.auto.update.activity.UpdateType3Activity;
@@ -270,6 +271,8 @@ public class AppUpdateUtils {
                 UpdateType11Activity.launch(mContext, info);
             } else if (type == TypeConfig.UI_THEME_L) {
                 UpdateType12Activity.launch(mContext, info);
+            } else if (type == TypeConfig.UI_THEME_M) {
+                UpdateType13Activity.launch(mContext, info);
             }
         } else {
             //直接下载

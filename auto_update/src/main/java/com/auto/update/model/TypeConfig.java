@@ -37,4 +37,5 @@ public class TypeConfig {
     public static final int UI_THEME_J = 310;//类型J，具体样式效果请关注demo
     public static final int UI_THEME_K = 311;//类型K，具体样式效果请关注demo
     public static final int UI_THEME_L = 312;//类型K，具体样式效果请关注demo
+    public static final int UI_THEME_M = 313;//类型K，具体样式效果请关注demo
 }

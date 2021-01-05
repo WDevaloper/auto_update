@@ -81,7 +81,7 @@ public class AppUtils {
     public static String getAppRootPath() {
         //构建下载路径
         String packageName = AppUpdateUtils.getInstance().getContext().getPackageName();
-        return Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + packageName + "/apks";
+        return Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getAbsolutePath() + "/" + packageName + "/apks";
     }
 
     /**

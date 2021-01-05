@@ -1,6 +1,7 @@
 package com.auto.www.autoupdateproject;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -72,6 +73,7 @@ public class CustomActivity extends RootActivity {
         return new AppDownloadListener() {
             @Override
             public void downloading(int progress) {
+                Log.e("tag", "downloading: "+progress);
                 //设置下载按钮的文案
                 tvUpdate.setText(ResUtils.getString(com.auto.update.R.string.downloading) + progress + "%");
             }
@@ -85,19 +87,21 @@ public class CustomActivity extends RootActivity {
 
             @Override
             public void downloadComplete(String path) {
+                Log.e("tag", "downloadComplete: "+ path);
                 //只需要你设置自定义页面上的文案即可 其他操作sdk会自己处理
                 tvUpdate.setText(ResUtils.getString(com.auto.update.R.string.btn_update_now));
             }
 
             @Override
             public void downloadStart() {
+                Log.e("tag", "downloadStart: ");
                 //下载开始了，设置按钮文案
                 tvUpdate.setText(ResUtils.getString(com.auto.update.R.string.btn_update_now));
             }
 
             @Override
             public void reDownload() {
-
+                Log.e("tag", "reDownload: ");
             }
 
             @Override

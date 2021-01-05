@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
     //造假数据
     private void obtainData() {
-        for (int i = 0; i < 13; i++) {
+        for (int i = 0; i < 14; i++) {
             ListModel listModel = new ListModel();
             listModel.setForceUpdate(false);
             listModel.setUiTypeValue(300 + i);
